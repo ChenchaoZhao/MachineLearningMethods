@@ -15,8 +15,8 @@ cc_ = np.array(palettes)
 
 
 class GegenbauerPolynomial:
-    """
-    TODO
+    """Gegenbauer Polynomial
+
     """
     
     def __init__(self, alpha, order):
@@ -58,8 +58,8 @@ class GegenbauerPolynomial:
         return poly(x)
 
 class HypersphericalHeatKernel:
-    """
-    TODO
+    """Hyperspherical heat kernel
+
     """
     def __init__(self, t, dimension_euclidean, max_itr = 100, eps_tol = 1e-8, normed=True):
         self.max_itr, self.eps_tol = max_itr, eps_tol
@@ -116,8 +116,7 @@ class HypersphericalHeatKernel:
         return self._hyperspherical_heat_kernel(cos)
 
 class EffectiveDissimilarity:
-    """
-    TODO
+    """Perform Effective Dissimilarity Transformation
     """
     def __init__(self, data, metric="euc"):
         if metric == "euc":
@@ -141,7 +140,7 @@ class EffectiveDissimilarity:
         return self.effective_dissimilarity_[tau]
         
     def _euc_dist_mat_(self, X):
-        """
+        """Compute Euclidean distance matrix
         Data should be in the shape [n_features, n_samples]
         """
         temp = np.dot(X.T, X)
@@ -169,8 +168,7 @@ class EffectiveDissimilarity:
         return mds
 
 class MDS:
-    """
-    TODO
+    """Multidimensional Scaling Embedding
     """
     def __init__(self, distance_matrix, max_embedding_dimension=3):
         if distance_matrix.shape[0] != distance_matrix.shape[1]:
