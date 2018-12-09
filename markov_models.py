@@ -1,14 +1,6 @@
 import numpy as np
 import scipy as sp
 
-palettes = [
-    '#D870AD', '#B377D9', '#7277D5', 
-    '#4B8CDC', '#3BB1D9', '#3BBEB0', 
-    '#3BB85D', '#82C250', '#B0C151', 
-    '#F5BA42', '#F59B43', '#E7663F', 
-    '#D94C42', '#655D56', '#A2A2A2']
-cc_ = np.array(palettes)
-
 class HiddenMarkovModel:
     def __init__(self, params, max_iter=500, eps=1e-6):
         
@@ -48,7 +40,7 @@ class HiddenMarkovModel:
         else:
             print("EM converged within {} steps".format(itr+1))
     
-    def get_forcast_probability(self, T, n_sig=3, n_pts=200):
+    def get_forecast_probability(self, T, n_sig=3, n_pts=200):
         assert T > 0 and self._is_fitted
         p_T = self.posterior1[-1]
         for t in range(T):
@@ -77,7 +69,7 @@ class HiddenMarkovModel:
         return np.argmax(p_T)
     
     def predict_observation(self, T, method="mean"):
-        x_, p_ = self.get_forcast_probability(T)
+        x_, p_ = self.get_forecast_probability(T)
         if method == "mode":
             return x_[np.argmax(p_)]
         elif method == "mean":
