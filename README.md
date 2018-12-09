@@ -2,7 +2,7 @@
 
 ## Machine Learning Methods from My Dissertation
 
-A brief introduction to the mathematical context of these machine learning methods can be found in my final defense slides.
+A brief introduction to the mathematical context of these machine learning methods can be found in my [final defense slides](Dissertation.pdf).
 
 #### Hyperspherical Heat Kernel
 
