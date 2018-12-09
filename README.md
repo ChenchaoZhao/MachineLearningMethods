@@ -1,17 +1,21 @@
 # Machine Learning Methods
 
-## Hyperspherical Heat Kernel
+## Machine Learning Methods from My Dissertation
 
-### Gegenbauer Polynomial
+A brief introduction to the mathematical context of these machine learning methods can be found in my final defense slides.
 
-## Effective Dissimilarity
+#### Hyperspherical Heat Kernel
 
-### Multidimensional Scaling (MDS)
+##### Gegenbauer Polynomial
 
-### Kernel MDS
+##### Effective Dissimilarity
 
-## Graph Clustering Methods
+##### Multidimensional Scaling (MDS)
 
-### Spectral Clustering
+##### Kernel MDS
 
-### Quantum Transport Clustering
+##### Graph Clustering Methods
+
+##### Spectral Clustering
+
+##### Quantum Transport Clustering
