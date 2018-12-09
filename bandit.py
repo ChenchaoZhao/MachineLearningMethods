@@ -1,6 +1,6 @@
 import numpy as np
 
-class n_armed_bandit:
+class NArmedBandit(object):
     def __init__(self, n, reward_distribution_parameters_, decision='greedy', reward_distribution='normal', eps=None, beta=None, optimistic_init = 0):
         if isinstance(n, int) and n > 1:
             self.n_arms = n

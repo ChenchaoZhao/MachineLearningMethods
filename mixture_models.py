@@ -1,8 +1,7 @@
 import numpy as np
-import scipy as sp
 
 class DirichletProcessMixtureModel:
-    def __init__(self, alpha, n_dim = 2, sig2 = 1, max_itr = 200):
+    def __init__(self, alpha, n_dim = 2, sig2 = 1, max_itr = 50):
         self.alpha = alpha
         self.n_dim = n_dim
         self.sig2 = sig2

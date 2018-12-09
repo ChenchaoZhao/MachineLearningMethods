@@ -1,17 +1,8 @@
+import math
 import numpy as np
 import scipy as sp
 from scipy.sparse.csgraph import laplacian as sp_lap
 from sklearn.cluster import KMeans
-import math
-
-pi = np.pi
-palettes = [
-    '#D870AD', '#B377D9', '#7277D5', 
-    '#4B8CDC', '#3BB1D9', '#3BBEB0', 
-    '#3BB85D', '#82C250', '#B0C151', 
-    '#F5BA42', '#F59B43', '#E7663F', 
-    '#D94C42', '#655D56', '#A2A2A2']
-cc_ = np.array(palettes)
 
 
 class GegenbauerPolynomial:

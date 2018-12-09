@@ -1,7 +1,6 @@
 import numpy as np
-import scipy as sp
 
-class HiddenMarkovModel:
+class HiddenMarkovModel(object):
     def __init__(self, params, max_iter=500, eps=1e-6):
         
         self.max_iter = max_iter
