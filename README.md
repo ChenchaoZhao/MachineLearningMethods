@@ -2,6 +2,11 @@
 
 This repo is a collection of machine learning algorithms developed during my doctoral program as well as my implementations of classic models in my downtime.
 
+My deep learning projects can also be found at
+
+- [Neural Camouflage](https://chenchaozhao.github.io/NeuralCamouflage/)
+- [Fingerprints of the Invisible Hand](https://chenchaozhao.github.io/FingerprintsOfTheInvisibleHand/)
+
 ## Machine Learning Methods from My Dissertation
 
 A brief introduction to the mathematical context of these machine learning methods can be found in my [final defense slides](Dissertation.pdf). The codes are collected in module `mark_i.py`:
@@ -24,3 +29,34 @@ A brief introduction to the mathematical context of these machine learning metho
   - Quantum Transport Clustering
     - An alternative way to perform spectral embedding
     - `class QuantumTransportClustering(n_clusters, Hamiltonian, s=1.0, is_exact=True, n_eigs = None) `
+
+## Mixture Models
+
+Dirichlet Process Mixture Model
+
+```python
+class DirichletProcessMixtureModel(alpha, n_dim=2, sig2=1, max_itr=50)
+```
+
+See [demo notebook](/examples/DPMM_demo.ipynb).
+
+## Markov Models
+
+Hidden Markov Model
+
+```python
+class HiddenMarkovModel(params, max_iter=500, eps=1e-6)
+```
+
+See [demo notebook](/examples/HMM_demo.ipynb).
+
+## Bandit Models
+
+N-Armed Bandit
+
+```python
+class NArmedBandit(n, reward_distribution_parameters_, decision='greedy', reward_distribution='normal', eps=None, beta=None, optimistic_init = 0)
+```
+
+See [demo notebook](/examples/Bandit_demo.ipynb).
+
